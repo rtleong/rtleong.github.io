@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv=""X-UA-Compatible" content=""IE-eddge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Riley's Personal Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/6479879e67.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/L.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class= "header-text">
+                <p>Data Analyst/Software Engineer</p>
+                <h1>Based in <span>Bay Area</span><br>and LA County</h1>
+            </div>
+        </div>
+    </div>
+    <!----------about page-->
+    <div id="about">
+        <div class="contain">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/awp.DSC_8672.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>
+                        2nd-Year Undergraduate @ UCLA<br>
+                        Studying Mathematics of Computation with a focus in Data Science engineering
+                    </p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Data Analysis</span><br>Extracting, transforming, and analyzing complex datasets using tools<br> such as R, 
+                            Python and SQL. Adept at cleaning and preprocessing 
+                            data <br>to ensure accuracy and reliability in insights generation.</li>
+                            <li><span>Frontend Development</span><br>In-depth proficiency in crafting dynamic and visually appealing interfaces<br>
+                            using HTML, CSS, and JS. Demonstrated expertise in responsive and <br>mobile-first design principles.</li>
+                            <li><span>Backend Development</span><br>Designing and developing robust server-side applications using C++,<br> 
+                                Java, and Node.js. Expertise in integrating APIs with frontend systems<br> to enable smooth data exchange 
+                                and application functionality</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2022 - Current</span><br>Data Analyst, Data Science Union</li>
+                            <li><span>June 2023 - August 2023</span><br>Software Research Consultant, Pinter-Wollman Lab @ <span>UCLA</span></li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2022 - Current</span><br>B.S Mathematics of Computation, UCLA</li>
+                            <li><span>2022 - Current</span><br>Minor, Data Science and Engineering, UCLA</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<!----------------services---------------->
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-code-branch"></i>
+                <h2>Frontend Development</h2>
+                <p>Webpages, Portfolios, eCommerce</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-magnifying-glass-chart"></i>
+                <h2>Data Analysis</h2>
+                <p>Preprocessing, Cleaning, Interpretation</p>
+                <a href="https://github.com/rtleong/Myers-Briggs-Personality-Type-Machine-Learning-Project">Learn more</a>
+            </div>
+            <div>
+                <i class="fa-solid fa-gamepad"></i>
+                <h2>Backend Development</h2>
+                <p>Creating Multiplayer Video Games, Recommendation Algorithms, Python Libraries </p>
+                <a href="https://github.com/rtleong/PeachParty">Learn more</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-----------Portfolio----------->
+<div id="portfolio">
+    <div class="container">
+        <h1 class = "sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/peachpartypic_650x800.png">
+                <div class="layer">
+                    <h3>Multiplayer "Mario Party" Clone</h3>
+                    <p>Development showcases familiarity with concepts of object-oriented programming, algorithm choice, and UI design
+                    </p>
+                    <a href="https://github.com/rtleong/PeachParty"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/myersbriggs.png">
+                <div class="layer">
+                    <h3>Myers-Briggs ML Exploration</h3>
+                    <p>Analyzed dataset with individual's last 50 social media posts and used Machine Learning
+                        to predict personality test results
+                    </p>
+                    <a href="https://github.com/rtleong/Myers-Briggs-Personality-Type-Machine-Learning-Project/tree/main"><i class="fa-solid fa-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/medium.png">
+                <div class="layer">
+                    <h3>Principal Component Analysis</h3>
+                    <p>Built a model to predict the degree of physical inactivity in a US county based on numerous factors, then used PCA to 
+                        reduce the dimensions of the data while maintaining the performance of the original model
+                    </p>
+                    <a href="https://github.com/rtleong/PCA-to-Determine-Causes-of-Physical-Inactivity-in-the-US"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    <a href="https://medium.com/@ucladsu/healthy-communties-b8e02cc8ec81"><i class="fa-brands fa-medium"></i></a>
+                </div>
+            </div>
+        </div>
+<!----------    <a href="#" class="btn">See more</a>        ADD THIS BACK IN TO CREATE SEE MORE BUTTON----->
+    </div>
+</div>
+<!-------------contact------------>
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-paper-plane"></i> rileyleong24@g.ucla.edu</p>
+                <p><i class="fa-solid fa-square-phone"></i> (925)-786-2106</p>
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/riley-leong/"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://github.com/rtleong"><i class="fa-brands fa-github"></i></a>
+                </div>
+                <a href="C:\Users\rileo\OneDrive\Desktop\Personal-Portfolio\images\Riley_Leong's_Resume.pdf" download class = "btn btn2">Download Resume</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name = "Name" placeholder="Your Name" required>
+                    <input type="text" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Made by Riley. Hosted with Github Pages</p>
+    </div>
+</div>
+
+
+    <script>
+
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname) {
+            for(tablink of tablinks){
+                tablink.classList.remove("active-link");
+            }
+            for(tabcontent of tabcontents){
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+
+    </script>
+
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+
+        function openmenu(){
+            sidemenu.style.right = "0";
+        }
+
+        function closemenu(){
+            sidemenu.style.right = "-200px";
+        }
+    </script>
+
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbwovGJeCfksW4tEK5bY9D8TMJs3RKiN5h8c0ICUPPG7wFW-QWpRP7wVcK9W5FEaTmyv/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+    
+        form.addEventListener('submit', e => {
+        e.preventDefault()
+        fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+            .then(response => {
+                msg.innerHTML = "Message sent successfully"
+                setTimeout(function(){
+                    msg.innerHTML = ""
+                    form.reset()
+                }, 5000)
+            })
+            .catch(error => console.error('Error!', error.message))
+        })
+    </script>
+
+</body>
+</html>
